@@ -24,6 +24,7 @@ class UserController {
     }
 
     def save = {
+        log.info('开始进行保存操作');
         def userInstance = new User(params)
         if (userInstance.save(flush: true)) {
             flash.message = "${message(code: 'default.created.message', args: [message(code: 'user.label', default: 'User'), userInstance.id])}"
