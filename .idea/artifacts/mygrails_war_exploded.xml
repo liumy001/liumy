@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="mygrails:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/mygrails_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="mygrails" />
+          <element id="module-output" name="mygrails-grailsPlugins" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="Grails User Library (mygrails-grailsPlugins)" module-name="mygrails-grailsPlugins" />
+        </element>
+      </element>
+      <element id="library" level="module" name="Grails User Library (mygrails)" module-name="mygrails" />
+      <element id="javaee-facet-resources" facet="mygrails/web/GrailsWeb" />
+    </root>
+  </artifact>
+</component>
